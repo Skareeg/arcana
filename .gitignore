@@ -1,0 +1,10 @@
+build
+llvmbuilddir
+openxrbuilddir
+llvminstall
+openxrinstall
+
+*.ll
+*.bc
+
+.vscode
