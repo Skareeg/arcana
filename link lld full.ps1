@@ -1,4 +1,5 @@
 & llvminstall/bin/lld-link.exe `
+    /entry:mainCRTstartup `
     /subsystem:console `
     /out:main2.exe `
     /libpath:"C:\Program Files (x86)\Windows Kits\10\Lib\$env:WIN_SDK\ucrt\x64" `
