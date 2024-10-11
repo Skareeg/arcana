@@ -8,3 +8,6 @@ openxrinstall
 *.bc
 
 .vscode
+
+*.obj
+*.exe
