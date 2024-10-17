@@ -4,7 +4,6 @@ openxrbuilddir
 llvminstall
 openxrinstall
 
-*.ll
 *.bc
 
 .vscode

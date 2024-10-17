@@ -13,4 +13,12 @@ if ($args.Count -eq 0) {
 
 $inputFile = $args[0]
 
-& llvminstall/bin/clang.exe -S -emit-llvm -std=c99 -fms-extensions -isystem "C:\Program Files (x86)\Windows Kits\10\Include\$env:WIN_SDK\ucrt" -isystem "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\$env:MSVC_SDK\include" src/$inputFile
+& llvminstall/bin/clang.exe `
+    -S `
+    -emit-llvm `
+    -std=c99 `
+    -fms-extensions `
+    -isystem "C:\Program Files (x86)\Windows Kits\10\Include\$env:WIN_SDK\ucrt" `
+    -isystem "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\$env:MSVC_SDK\include" `
+    -I "$env:VULKAN_SDK\Include" `
+    src/$inputFile

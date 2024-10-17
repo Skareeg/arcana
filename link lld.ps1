@@ -1,5 +1,5 @@
 # The libvcruntime.lib and the two extra libpaths (Win SDK "um" and MSVC "atlmfc") (which are separate from even that) are not required.
-# The actual entrypoint defaults to mainCRTstartup, which calls main.
+# The actual entrypoint *sometimes* defaults to mainCRTstartup, which calls main.
 & llvminstall/bin/lld-link.exe `
     /subsystem:console `
     /out:main2.exe `
